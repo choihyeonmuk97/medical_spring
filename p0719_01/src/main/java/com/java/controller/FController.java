@@ -48,7 +48,7 @@ public class FController {
 		
 		System.out.println("oauth code :"+code);
 		String grant_type = "authorization_code";
-		String client_id="46aebf8f45d2156ebb99479830ce2694";
+		String client_id="2ffd9ba41b8e2e0a4c7d62374f1f991d";
 		String redirect_uri = "http://localhost:8181/kakao/oauth";
 		
 		
