@@ -14,7 +14,7 @@ pageEncoding="UTF-8"%>
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/notice_list.css">
   <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8f250f2691227a22eed777c5dd2893bb"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d892befda0f3748480b5e97a2dd60e23"></script>
 </head>
 <body>
 <section>
@@ -29,7 +29,7 @@ pageEncoding="UTF-8"%>
           dataType:"json",
           success:function(data){
             alert("성공");
-            console.log("controller data : "+data)
+            console.log("controller data : "+data);
             let arr = data.response.body.items.item;
 
             let htmlData = "";

@@ -16,7 +16,7 @@
 	        <li><a href="list2">검색 사진 리스트</a></li>
 	        <li><a href="kakaoMap">kakaomap_api</a></li>
 	        <li><a href="chart">chart.js</a></li>
-	        <li>회원정보</li>
+	        <li><a href="map_test">검색 주소 마커 표시하기</a></li>
 		</ul>
 	</body>
 </html>

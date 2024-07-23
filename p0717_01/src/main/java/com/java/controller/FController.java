@@ -24,6 +24,10 @@ public class FController {
 	public String list() {
 		return "list";
 	}
+	@GetMapping("/map_test")
+	public String map_test() {
+		return "map_test";
+	}
 	
 	@GetMapping("/list2")
 	public String list2() {
@@ -82,7 +86,7 @@ public class FController {
 		
 	}
 
-	@PostMapping("/search_data") // 부산데이터 가져오기
+	@PostMapping("/search_data") // 검색데이터 가져오기
 	@ResponseBody
 	public String search_data(String keyword) throws Exception {
 		
@@ -92,9 +96,7 @@ public class FController {
 		
 		StringBuilder urlBuilder = new StringBuilder(web_url); /* URL */
 		urlBuilder.append("?" + URLEncoder.encode("ServiceKey", "UTF-8") + "=" + service_key); /* Service Key */
-		// 주석처리해야 함.
-		// urlBuilder.append("&" + URLEncoder.encode("ServiceKey","UTF-8") + "=" +
-		// URLEncoder.encode("-", "UTF-8")); /*이부분 주석처리 : 공공데이터포털에서 받은 인증키*/
+		
 		urlBuilder.append("&" + URLEncoder.encode("numOfRows", "UTF-8") + "="+ URLEncoder.encode("10", "UTF-8")); /* 한 페이지 결과 수 */
 		urlBuilder.append("&" + URLEncoder.encode("pageNo", "UTF-8") + "=" + URLEncoder.encode("page", "UTF-8")); /* 페이지번호 */
 		urlBuilder.append("&" + URLEncoder.encode("MobileOS", "UTF-8") + "="+ URLEncoder.encode("ETC", "UTF-8")); /* 서비스 형태 */
